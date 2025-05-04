@@ -16,7 +16,7 @@ def call(Map configMap){
             region = 'us-east-1'
             account_id = '905418111046'
             project = configMap.get("project")
-            environment = 'dev'
+            environment = pipelineGlobals.getAccountID(environment)
             component = configMap.get("component")
         }
 
